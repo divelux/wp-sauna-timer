@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preview: the markup the plugin renders</title>
+<style>
+  body { margin: 0; font: 17px/1.6 Georgia, serif; color: #1e1e1e; background: #fff; }
+  main { max-width: 640px; margin: 0 auto; padding: 32px 20px; }
+  h1 { font: 700 30px/1.2 system-ui, sans-serif; margin: 0 0 12px; }
+  .wpst-sauna-timer { --sauna-timer-font: system-ui, -apple-system, "Segoe UI", sans-serif; margin: 24px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Our Saturday sauna</h1>
+  <p>Three rounds, ten minutes each, with a proper break in between. Press Start when you step in.</p>
+  <!-- What [sauna_timer heading="Evening session"] renders with the default settings: -->
+  <div class="wpst-sauna-timer"><sauna-timer rounds="3" heat="10" rest="10" heading="Evening session" credit="off"><p>Sauna timer: 3 rounds of 10 minutes with 10-minute breaks. It needs JavaScript.</p></sauna-timer></div>
+  <p>Drink a glass of water in each break.</p>
+</main>
+<script src="../assets/sauna-timer.iife.js" defer></script>
+</body>
+</html>

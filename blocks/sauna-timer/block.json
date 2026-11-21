@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "divelux/sauna-timer",
+	"version": "1.0.0",
+	"title": "Sauna Timer",
+	"category": "widgets",
+	"icon": "clock",
+	"description": "A sauna round timer: time in the heat, a break, repeat, final cool-down.",
+	"keywords": [ "sauna", "timer", "interval", "countdown" ],
+	"textdomain": "wp-sauna-timer",
+	"attributes": {
+		"rounds": { "type": "integer" },
+		"heat": { "type": "integer" },
+		"rest": { "type": "integer" },
+		"cooldown": { "type": "integer" },
+		"muted": { "type": "boolean" },
+		"heading": { "type": "string" }
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide" ],
+		"spacing": { "margin": true }
+	},
+	"example": {
+		"attributes": { "rounds": 3, "heat": 10, "rest": 10 }
+	},
+	"editorScript": "wpst-block-editor"
+}
